@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @cliente.nombre %>
+</p>
+
+<p>
+  <strong>Teléfono:</strong>
+  <%= @cliente.telefono %>
+</p>
+
+<p>
+  <strong>Celular:</strong>
+  <%= @cliente.celular %>
+</p>
+
+<p>
+  <strong>Dirección:</strong>
+  <%= @cliente.direccion %>
+</p>
+
+<p>
+  <strong>Punto de referencia:</strong>
+  <%= @cliente.referenciadir %>
+</p>
+
+<p>
+  <strong>Ocación:</strong>
+  <%= @cliente.ocacion %>
+</p>
+
+<p>
+  <strong>Hora:</strong>
+  <%= @cliente.hora %>
+</p>
+
+<p>
+  <strong>Valor:</strong>
+  <%= @cliente.valor %>
+</p>
+
+<%= link_to 'EDITAR', edit_cliente_path(@cliente) %> |
+<%= link_to 'ATRAS', clientes_path %>
