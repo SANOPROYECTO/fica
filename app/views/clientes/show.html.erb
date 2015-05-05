@@ -6,7 +6,7 @@
 </p>
 
 <p>
-  <strong>Teléfono:</strong>
+  <strong>Telefono:</strong>
   <%= @cliente.telefono %>
 </p>
 
@@ -16,18 +16,23 @@
 </p>
 
 <p>
-  <strong>Dirección:</strong>
+  <strong>Barrio:</strong>
+  <%= @cliente.barrio %>
+</p>
+
+<p>
+  <strong>Direccion:</strong>
   <%= @cliente.direccion %>
 </p>
 
 <p>
-  <strong>Punto de referencia:</strong>
+  <strong>Referenciadir:</strong>
   <%= @cliente.referenciadir %>
 </p>
 
 <p>
-  <strong>Ocación:</strong>
-  <%= @cliente.ocacion %>
+  <strong>Fecha:</strong>
+  <%= @cliente.fecha %>
 </p>
 
 <p>
@@ -36,9 +41,14 @@
 </p>
 
 <p>
+  <strong>Ocacion:</strong>
+  <%= @cliente.ocacion %>
+</p>
+
+<p>
   <strong>Valor:</strong>
   <%= @cliente.valor %>
 </p>
 
-<%= link_to 'EDITAR', edit_cliente_path(@cliente) %> |
-<%= link_to 'ATRAS', clientes_path %>
+<%= link_to 'Edita', edit_cliente_path(@cliente) %> |
+<%= link_to 'Atras', clientes_path %>

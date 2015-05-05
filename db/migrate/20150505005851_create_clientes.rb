@@ -4,10 +4,12 @@ class CreateClientes < ActiveRecord::Migration
       t.string :nombre
       t.string :telefono
       t.string :celular
+      t.string :barrio
       t.string :direccion
       t.string :referenciadir
-      t.string :ocacion
+      t.date :fecha
       t.string :hora
+      t.string :ocacion
       t.integer :valor
 
       t.timestamps null: false

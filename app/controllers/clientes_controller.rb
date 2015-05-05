@@ -56,7 +56,7 @@ class ClientesController < ApplicationController
   def destroy
     @cliente.destroy
     respond_to do |format|
-      format.html { redirect_to clientes_url, notice: 'Cliente elimindo exitosamente.' }
+      format.html { redirect_to clientes_url, notice: 'Cliente eliminado exitosamente.' }
       format.json { head :no_content }
     end
   end
@@ -69,6 +69,6 @@ class ClientesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def cliente_params
-      params.require(:cliente).permit(:nombre, :telefono, :celular, :direccion, :referenciadir, :ocacion, :hora, :valor)
+      params.require(:cliente).permit(:nombre, :telefono, :celular, :barrio, :direccion, :referenciadir, :fecha, :hora, :ocacion, :valor)
     end
 end

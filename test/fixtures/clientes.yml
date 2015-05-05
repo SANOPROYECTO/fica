@@ -4,18 +4,22 @@ one:
   nombre: MyString
   telefono: MyString
   celular: MyString
+  barrio: MyString
   direccion: MyString
   referenciadir: MyString
-  Ocacion: MyString
+  fecha: 2015-05-04
   hora: MyString
+  ocacion: MyString
   valor: 1
 
 two:
   nombre: MyString
   telefono: MyString
   celular: MyString
+  barrio: MyString
   direccion: MyString
   referenciadir: MyString
-  Ocacion: MyString
+  fecha: 2015-05-04
   hora: MyString
+  ocacion: MyString
   valor: 1
