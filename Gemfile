@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-
+#http://blog.en1mes.com/2014/02/recetario-de-heroku-para-rails/
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
