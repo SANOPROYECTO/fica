@@ -4,8 +4,8 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
-	#gem 'heroku'
+#gem 'sqlite3'
+	gem 'heroku'
 	group :production do
 	gem 'pg','0.18.1'
 	gem 'rails_12factor', '0.0.2'
