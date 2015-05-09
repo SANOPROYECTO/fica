@@ -1,5 +1,5 @@
 body {
-  background-color: #fff;
+  background-color: #848484;
   color: #333;
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
@@ -25,7 +25,7 @@ a {
   }
   &:hover {
     color: #fff;
-    background-color: #000;
+    background-color: #def;
   }
 }
 
@@ -66,4 +66,34 @@ div {
     font-size: 12px;
     list-style: square;
   }
+}
+/* footer */ 
+ 
+footer { 
+  margin­-top: 45px; 
+  padding­-top: 5px; 
+  border­-top: 1px solid #eaeaea; 
+  color: #999; 
+} 
+ 
+footer a { 
+  color: #555; 
+}   
+ 
+footer a:hover { 
+  color: #222; 
+} 
+ 
+footer small { 
+  float: left; 
+} 
+ 
+footer ul { 
+  float: right;   
+  list­-style: none; 
+} 
+ 
+footer ul li { 
+  float: left; 
+  margin­-left: 10px; 
 }

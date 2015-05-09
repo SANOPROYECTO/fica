@@ -10,9 +10,9 @@ Nombre del cliente:
 <% end %>
 <% end %>
 
-<table>
+<table class="table table-bordered">
   <thead>
-    <tr>
+    <tr class="info">
       <th>Nombre</th>
       <th>Telefono</th>
       <th>Celular</th>
@@ -29,7 +29,7 @@ Nombre del cliente:
 
   <tbody>
     <% @clientes.each do |cliente| %>
-      <tr>
+      <tr class="success">
         <td><%= cliente.nombre %></td>
         <td><%= cliente.telefono %></td>
         <td><%= cliente.celular %></td>
