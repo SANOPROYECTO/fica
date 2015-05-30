@@ -54,3 +54,4 @@ gem 'autoprefixer-rails'
 		gem 'rails_layout' 
 	end 
 gem 'simple_form'
+ruby '2.2.1'
