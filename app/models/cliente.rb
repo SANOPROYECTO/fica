@@ -6,6 +6,7 @@ class Cliente < ActiveRecord::Base
 	validates :nombre, :presence => true
 	validates :direccion, :presence => true
 	validates :hora, :presence => true
+	validates :fecha, :presence => true
 	validates :valor, :presence => true
 	# valida la longitud de un campo, tanto la longitud minima como la maxima
 	validates :nombre, length: { minimum: 5, maximum: 50 }
