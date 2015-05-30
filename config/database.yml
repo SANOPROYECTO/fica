@@ -23,6 +23,8 @@ test:
 production:
   <<: *default
   database: db/production.sqlite3
+
+
 # PostgreSQL. Versions 8.2 and up are supported.
 #
 # Install the pg driver:
@@ -39,9 +41,9 @@ production:
 # Configure Using Gemfile
 # gem 'pg'
 #
-default: &default
-  adapter: postgresql
-  encoding: unicode
-  # For details on connection pooling, see rails configuration guide
-  # http://guides.rubyonrails.org/configuring.html#database-pooling
-  pool: 5
+                #default: &default
+                #  adapter: postgresql
+                #  encoding: unicode
+                   # For details on connection pooling, see rails configuration guide
+                   # http://guides.rubyonrails.org/configuring.html#database-pooling
+                #  pool: 5
