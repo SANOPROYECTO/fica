@@ -55,3 +55,4 @@ gem 'autoprefixer-rails'
 	end 
 gem 'simple_form'
 ruby '2.0.0'
+gem 'bootstrap-datepicker-rails'

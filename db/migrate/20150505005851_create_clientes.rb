@@ -7,7 +7,7 @@ class CreateClientes < ActiveRecord::Migration
       t.string :barrio
       t.string :direccion
       t.string :referenciadir
-      t.string :fecha
+      t.date :fecha
       t.string :hora
       t.string :ocacion
       t.integer :valor
