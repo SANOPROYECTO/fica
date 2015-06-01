@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(version: 20150505005851) do
     t.string   "barrio"
     t.string   "direccion"
     t.string   "referenciadir"
-    t.string   "fecha"
+    t.date     "fecha"
     t.string   "hora"
     t.string   "ocacion"
     t.integer  "valor"
