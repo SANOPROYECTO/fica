@@ -1,6 +1,6 @@
 class Cliente < ActiveRecord::Base
 	def self.search(search, page)
-	 where(['upper(fecha) like?', "%#{search}%".upcase]).paginate(page: page, per_page: 5).order("fecha")
+	 where(['upper(fecha) like?', "%#{search}%".upcase]).paginate(page: page, per_page: 7).order("fecha")
     end
     # Validar que los atributos sean obligatorios
 	validates :nombre, :presence => true
