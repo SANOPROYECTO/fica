@@ -40,9 +40,9 @@ Fecha del evento:
         <td><%= cliente.hora %></td>
         <td><%= cliente.ocacion %></td>
         <td><%= cliente.valor %></td>
-        <td><%= link_to 'Ver', cliente %></td>
-        <td><%= link_to 'Editar', edit_cliente_path(cliente) %></td>
-        <td><%= link_to 'Eliminar', cliente, method: :delete, data: { confirm: 'Quiere Eliminar el registro?' } %></td>
+        <td><%= link_to 'VER', cliente %></td>
+        <td><%= link_to 'EDITAR', edit_cliente_path(cliente) %></td>
+        <td><%= link_to 'ELIMINAR', cliente, method: :delete, data: { confirm: 'Quiere Eliminar el registro?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -50,7 +50,7 @@ Fecha del evento:
 
 <br>
 
-<%= link_to 'Nuevo Cliente', new_cliente_path %>
+<%= link_to 'NUEVO CLIENTE', new_cliente_path %>
 
 <%= will_paginate @clientes, :previous_label => '&laquo; Anterior', :next_label => 'Siguiente
 &raquo;' %>
