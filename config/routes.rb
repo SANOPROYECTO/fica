@@ -4,21 +4,15 @@ Rails.application.routes.draw do
   match '/about',   to: 'static_pages#about',  via: 'get' 
   match '/contact', to: 'static_pages#contact',  via: 'get' 
  
-<<<<<<< HEAD
-  root :to => 'static_pages#home'
-
-=======
->>>>>>> b19f0cd07a5572d5f7bfe5e233b9c95b72c2622e
   resources :clientes
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-<<<<<<< HEAD
+
   #root 'clientes#index'
-=======
+
   root :to => 'static_pages#home'
->>>>>>> b19f0cd07a5572d5f7bfe5e233b9c95b72c2622e
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
