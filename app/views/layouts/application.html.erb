@@ -2,7 +2,11 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
     <title><%= content_for?(:title) ? yield(:title) : "Fiesta y cumbia" %></title>
+=======
+    <title><%= content_for?(:title) ? yield(:title) : "Fica" %></title>
+>>>>>>> b19f0cd07a5572d5f7bfe5e233b9c95b72c2622e
     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Fica" %>">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
@@ -16,6 +20,9 @@
        <%= render 'layouts/messages' %>
        <%= yield %>
     </main>
+<<<<<<< HEAD
       <%= render 'layouts/footer' %>
+=======
+>>>>>>> b19f0cd07a5572d5f7bfe5e233b9c95b72c2622e
   </body>
 </html>
