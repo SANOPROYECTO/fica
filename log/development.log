@@ -32841,3 +32841,523 @@ Processing by ClientesController#index as HTML
   Rendered layouts/_messages.html.erb (0.2ms)
   Rendered layouts/_footer.html.erb (0.2ms)
 Completed 200 OK in 1574ms (Views: 1565.7ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/clientes/new" for 127.0.0.1 at 2015-06-11 21:43:53 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ClientesController#new as HTML
+  Rendered clientes/_form.html.erb (609.8ms)
+  Rendered clientes/new.html.erb within layouts/application (720.4ms)
+  Rendered layouts/_navigation_links.html.erb (2.8ms)
+  Rendered layouts/_navigation.html.erb (7.5ms)
+  Rendered layouts/_messages.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (1.3ms)
+Completed 200 OK in 3398ms (Views: 3308.1ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-11 21:48:50 -0500
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_navigation_links.html.erb (3.0ms)
+  Rendered layouts/_navigation.html.erb (8.0ms)
+  Rendered layouts/_messages.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (1.2ms)
+Completed 200 OK in 1742ms (Views: 1739.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/clientes" for 127.0.0.1 at 2015-06-11 21:48:52 -0500
+Processing by ClientesController#index as HTML
+  [1m[35mCliente Load (2.4ms)[0m  SELECT  "clientes".* FROM "clientes" WHERE (upper(fecha) like'%%')  ORDER BY fecha LIMIT 6 OFFSET 0
+  [1m[36m (0.7ms)[0m  [1mSELECT COUNT(*) FROM "clientes" WHERE (upper(fecha) like'%%')[0m
+  [1m[35mCACHE (0.1ms)[0m  SELECT COUNT(*) FROM "clientes" WHERE (upper(fecha) like'%%')
+  Rendered clientes/index.html.erb within layouts/application (43.3ms)
+  Rendered layouts/_navigation_links.html.erb (0.9ms)
+  Rendered layouts/_navigation.html.erb (4.0ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 1541ms (Views: 1534.0ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-11 21:48:58 -0500
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_navigation_links.html.erb (1.0ms)
+  Rendered layouts/_navigation.html.erb (4.5ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 1504ms (Views: 1501.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/clientes" for 127.0.0.1 at 2015-06-11 21:49:00 -0500
+Processing by ClientesController#index as HTML
+  [1m[36mCliente Load (2.3ms)[0m  [1mSELECT  "clientes".* FROM "clientes" WHERE (upper(fecha) like'%%')  ORDER BY fecha LIMIT 6 OFFSET 0[0m
+  [1m[35m (0.8ms)[0m  SELECT COUNT(*) FROM "clientes" WHERE (upper(fecha) like'%%')
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT COUNT(*) FROM "clientes" WHERE (upper(fecha) like'%%')[0m
+  Rendered clientes/index.html.erb within layouts/application (28.0ms)
+  Rendered layouts/_navigation_links.html.erb (1.0ms)
+  Rendered layouts/_navigation.html.erb (4.0ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 1587ms (Views: 1579.5ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/clientes/new" for 127.0.0.1 at 2015-06-11 21:49:04 -0500
+Processing by ClientesController#new as HTML
+  Rendered clientes/_form.html.erb (404.4ms)
+  Rendered clientes/new.html.erb within layouts/application (409.6ms)
+  Rendered layouts/_navigation_links.html.erb (0.9ms)
+  Rendered layouts/_navigation.html.erb (4.0ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 1928ms (Views: 1925.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/clientes/new" for 127.0.0.1 at 2015-06-11 22:04:16 -0500
+Processing by ClientesController#new as HTML
+  Rendered clientes/_form.html.erb (418.3ms)
+  Rendered clientes/new.html.erb within layouts/application (421.0ms)
+  Rendered layouts/_navigation_links.html.erb (0.8ms)
+  Rendered layouts/_navigation.html.erb (3.4ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 1913ms (Views: 1909.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-11 22:04:35 -0500
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_navigation_links.html.erb (0.9ms)
+  Rendered layouts/_navigation.html.erb (3.9ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 1477ms (Views: 1474.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/SpryAssets/SpryMenuBarHorizontal.css" for 127.0.0.1 at 2015-06-11 22:04:37 -0500
+
+ActionController::RoutingError (No route matches [GET] "/SpryAssets/SpryMenuBarHorizontal.css"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  /home/pcpc/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/pcpc/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/pcpc/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/pcpc/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (228.0ms)
+  Rendered /home/pcpc/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.9ms)
+  Rendered /home/pcpc/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (6.9ms)
+  Rendered /home/pcpc/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.6ms)
+  Rendered /home/pcpc/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (309.7ms)
+  Rendered /home/pcpc/.rvm/gems/ruby-2.0.0-p643/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (1.3ms)
+  Rendered /home/pcpc/.rvm/gems/ruby-2.0.0-p643/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.2ms)
+  Rendered /home/pcpc/.rvm/gems/ruby-2.0.0-p643/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.1ms)
+  Rendered /home/pcpc/.rvm/gems/ruby-2.0.0-p643/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.1ms)
+  Rendered /home/pcpc/.rvm/gems/ruby-2.0.0-p643/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (48.7ms)
+  Rendered /home/pcpc/.rvm/gems/ruby-2.0.0-p643/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (1.2ms)
+  Rendered /home/pcpc/.rvm/gems/ruby-2.0.0-p643/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.5ms)
+  Rendered /home/pcpc/.rvm/gems/ruby-2.0.0-p643/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (102.0ms)
+
+
+Started GET "/SpryAssets/SpryMenuBar.js" for 127.0.0.1 at 2015-06-11 22:04:38 -0500
+
+ActionController::RoutingError (No route matches [GET] "/SpryAssets/SpryMenuBar.js"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  /home/pcpc/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/pcpc/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/pcpc/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/pcpc/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered /home/pcpc/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.9ms)
+  Rendered /home/pcpc/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.3ms)
+  Rendered /home/pcpc/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.3ms)
+  Rendered /home/pcpc/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (77.5ms)
+  Rendered /home/pcpc/.rvm/gems/ruby-2.0.0-p643/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (1.4ms)
+  Rendered /home/pcpc/.rvm/gems/ruby-2.0.0-p643/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.1ms)
+  Rendered /home/pcpc/.rvm/gems/ruby-2.0.0-p643/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.1ms)
+  Rendered /home/pcpc/.rvm/gems/ruby-2.0.0-p643/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.2ms)
+  Rendered /home/pcpc/.rvm/gems/ruby-2.0.0-p643/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (44.9ms)
+  Rendered /home/pcpc/.rvm/gems/ruby-2.0.0-p643/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (1.1ms)
+  Rendered /home/pcpc/.rvm/gems/ruby-2.0.0-p643/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.4ms)
+  Rendered /home/pcpc/.rvm/gems/ruby-2.0.0-p643/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (94.8ms)
+
+
+Started GET "/Scripts/AC_RunActiveContent.js" for 127.0.0.1 at 2015-06-11 22:04:38 -0500
+
+ActionController::RoutingError (No route matches [GET] "/Scripts/AC_RunActiveContent.js"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  /home/pcpc/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/pcpc/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/pcpc/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/pcpc/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.2ms)
+  Rendered /home/pcpc/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.7ms)
+  Rendered /home/pcpc/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.3ms)
+  Rendered /home/pcpc/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.4ms)
+  Rendered /home/pcpc/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (81.2ms)
+  Rendered /home/pcpc/.rvm/gems/ruby-2.0.0-p643/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (1.4ms)
+  Rendered /home/pcpc/.rvm/gems/ruby-2.0.0-p643/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.2ms)
+  Rendered /home/pcpc/.rvm/gems/ruby-2.0.0-p643/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.1ms)
+  Rendered /home/pcpc/.rvm/gems/ruby-2.0.0-p643/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.2ms)
+  Rendered /home/pcpc/.rvm/gems/ruby-2.0.0-p643/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (47.4ms)
+  Rendered /home/pcpc/.rvm/gems/ruby-2.0.0-p643/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (1.2ms)
+  Rendered /home/pcpc/.rvm/gems/ruby-2.0.0-p643/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.9ms)
+  Rendered /home/pcpc/.rvm/gems/ruby-2.0.0-p643/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (100.5ms)
+
+
+Started GET "/clientes" for 127.0.0.1 at 2015-06-11 22:04:39 -0500
+Processing by ClientesController#index as HTML
+  [1m[35mCliente Load (2.2ms)[0m  SELECT  "clientes".* FROM "clientes" WHERE (upper(fecha) like'%%')  ORDER BY fecha LIMIT 6 OFFSET 0
+  [1m[36m (0.8ms)[0m  [1mSELECT COUNT(*) FROM "clientes" WHERE (upper(fecha) like'%%')[0m
+  [1m[35mCACHE (0.1ms)[0m  SELECT COUNT(*) FROM "clientes" WHERE (upper(fecha) like'%%')
+  Rendered clientes/index.html.erb within layouts/application (58.8ms)
+  Rendered layouts/_navigation_links.html.erb (0.8ms)
+  Rendered layouts/_navigation.html.erb (3.7ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 1607ms (Views: 1595.8ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/clientes/new" for 127.0.0.1 at 2015-06-11 22:05:39 -0500
+Processing by ClientesController#new as HTML
+  Rendered clientes/_form.html.erb (421.1ms)
+  Rendered clientes/new.html.erb within layouts/application (423.8ms)
+  Rendered layouts/_navigation_links.html.erb (0.8ms)
+  Rendered layouts/_navigation.html.erb (3.7ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 1886ms (Views: 1883.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/clientes" for 127.0.0.1 at 2015-06-11 22:06:49 -0500
+Processing by ClientesController#index as HTML
+  [1m[36mCliente Load (2.2ms)[0m  [1mSELECT  "clientes".* FROM "clientes" WHERE (upper(fecha) like'%%')  ORDER BY fecha LIMIT 6 OFFSET 0[0m
+  [1m[35m (0.7ms)[0m  SELECT COUNT(*) FROM "clientes" WHERE (upper(fecha) like'%%')
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT COUNT(*) FROM "clientes" WHERE (upper(fecha) like'%%')[0m
+  Rendered clientes/index.html.erb within layouts/application (27.7ms)
+  Rendered layouts/_navigation_links.html.erb (0.9ms)
+  Rendered layouts/_navigation.html.erb (3.7ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 1527ms (Views: 1520.9ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/clientes/new" for 127.0.0.1 at 2015-06-11 22:07:27 -0500
+Processing by ClientesController#new as HTML
+  Rendered clientes/_form.html.erb (219.2ms)
+  Rendered clientes/new.html.erb within layouts/application (426.7ms)
+  Rendered layouts/_navigation_links.html.erb (0.8ms)
+  Rendered layouts/_navigation.html.erb (3.7ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 1898ms (Views: 1895.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/clientes" for 127.0.0.1 at 2015-06-11 22:09:47 -0500
+Processing by ClientesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"U02mrfrR84PsikxuVyaXaCydbaLULBYHVZsEusJAFZZmlklg+u0kUHFU830VuUKCGX555wPTvKMTAOKNCT0lcg==", "cliente"=>{"nombre"=>"home", "telefono"=>"home", "celular"=>"home", "barrio"=>"home", "direccion"=>"home", "referenciadir"=>"home", "hora"=>"home", "fecha"=>"home", "ocacion"=>"home", "valor"=>""}, "commit"=>"GUARDAR"}
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  Rendered clientes/_form.html.erb (206.6ms)
+  Rendered clientes/new.html.erb within layouts/application (209.1ms)
+  Rendered layouts/_navigation_links.html.erb (1.0ms)
+  Rendered layouts/_navigation.html.erb (3.6ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 1899ms (Views: 1879.2ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/clientes" for 127.0.0.1 at 2015-06-11 22:10:21 -0500
+Processing by ClientesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5pInz4NaBFrHPf+lfCk662GZyRIHR9jwlt8ozn5Pap/TScgCg2bTiVrjQLY+tu8BVHrdV9C4clTQRM75tTJaew==", "cliente"=>{"nombre"=>"home", "telefono"=>"home", "celular"=>"home", "barrio"=>"home", "direccion"=>"home", "referenciadir"=>"home", "hora"=>"home", "fecha"=>"home", "ocacion"=>"home", "valor"=>"1"}, "commit"=>"GUARDAR"}
+  [1m[35m (0.5ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  Rendered clientes/_form.html.erb (397.8ms)
+  Rendered clientes/new.html.erb within layouts/application (400.6ms)
+  Rendered layouts/_navigation_links.html.erb (0.9ms)
+  Rendered layouts/_navigation.html.erb (3.7ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 1911ms (Views: 1893.9ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/clientes" for 127.0.0.1 at 2015-06-11 22:10:32 -0500
+Processing by ClientesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yqNwCKmKc9QdksSrbyRM+iemJQJIphX/cv6zb88JsJ//eJ/FqbakB4BMe7gtu5kQEkUxR59Zv1s0ZVVYBHSAew==", "cliente"=>{"nombre"=>"home start", "telefono"=>"home", "celular"=>"home", "barrio"=>"home", "direccion"=>"home", "referenciadir"=>"home", "hora"=>"home", "fecha"=>"home", "ocacion"=>"home", "valor"=>"1"}, "commit"=>"GUARDAR"}
+  [1m[35m (0.4ms)[0m  begin transaction
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "clientes" ("nombre", "telefono", "celular", "barrio", "direccion", "referenciadir", "fecha", "hora", "ocacion", "valor", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["nombre", "home start"], ["telefono", "home"], ["celular", "home"], ["barrio", "home"], ["direccion", "home"], ["referenciadir", "home"], ["fecha", "home"], ["hora", "home"], ["ocacion", "home"], ["valor", 1], ["created_at", "2015-06-12 03:10:32.521468"], ["updated_at", "2015-06-12 03:10:32.521468"]]
+  [1m[35m (269.2ms)[0m  commit transaction
+Redirected to http://localhost:3000/clientes/61
+Completed 302 Found in 292ms (ActiveRecord: 270.8ms)
+
+
+Started GET "/clientes/61" for 127.0.0.1 at 2015-06-11 22:10:32 -0500
+Processing by ClientesController#show as HTML
+  Parameters: {"id"=>"61"}
+  [1m[36mCliente Load (0.8ms)[0m  [1mSELECT  "clientes".* FROM "clientes" WHERE "clientes"."id" = ? LIMIT 1[0m  [["id", 61]]
+  Rendered clientes/show.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_navigation_links.html.erb (0.9ms)
+  Rendered layouts/_navigation.html.erb (3.6ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 1544ms (Views: 1526.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/clientes" for 127.0.0.1 at 2015-06-11 22:10:43 -0500
+Processing by ClientesController#index as HTML
+  [1m[35mCliente Load (2.3ms)[0m  SELECT  "clientes".* FROM "clientes" WHERE (upper(fecha) like'%%')  ORDER BY fecha LIMIT 6 OFFSET 0
+  [1m[36m (0.8ms)[0m  [1mSELECT COUNT(*) FROM "clientes" WHERE (upper(fecha) like'%%')[0m
+  [1m[35mCACHE (0.1ms)[0m  SELECT COUNT(*) FROM "clientes" WHERE (upper(fecha) like'%%')
+  Rendered clientes/index.html.erb within layouts/application (27.4ms)
+  Rendered layouts/_navigation_links.html.erb (1.0ms)
+  Rendered layouts/_navigation.html.erb (3.8ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 1554ms (Views: 1541.1ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/clientes?utf8=%E2%9C%93&search=home" for 127.0.0.1 at 2015-06-11 22:10:52 -0500
+Processing by ClientesController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"home"}
+  [1m[36mCliente Load (3.7ms)[0m  [1mSELECT  "clientes".* FROM "clientes" WHERE (upper(fecha) like'%HOME%')  ORDER BY fecha LIMIT 6 OFFSET 0[0m
+  [1m[35m (1.2ms)[0m  SELECT COUNT(*) FROM "clientes" WHERE (upper(fecha) like'%HOME%')
+  Rendered clientes/index.html.erb within layouts/application (17.5ms)
+  Rendered layouts/_navigation_links.html.erb (0.9ms)
+  Rendered layouts/_navigation.html.erb (3.7ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 1529ms (Views: 1516.2ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/clientes/61" for 127.0.0.1 at 2015-06-11 22:11:17 -0500
+Processing by ClientesController#show as HTML
+  Parameters: {"id"=>"61"}
+  [1m[36mCliente Load (0.4ms)[0m  [1mSELECT  "clientes".* FROM "clientes" WHERE "clientes"."id" = ? LIMIT 1[0m  [["id", 61]]
+  Rendered clientes/show.html.erb within layouts/application (3.8ms)
+  Rendered layouts/_navigation_links.html.erb (0.8ms)
+  Rendered layouts/_navigation.html.erb (3.7ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 1512ms (Views: 1507.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/clientes/61/edit" for 127.0.0.1 at 2015-06-11 22:11:20 -0500
+Processing by ClientesController#edit as HTML
+  Parameters: {"id"=>"61"}
+  [1m[35mCliente Load (0.4ms)[0m  SELECT  "clientes".* FROM "clientes" WHERE "clientes"."id" = ? LIMIT 1  [["id", 61]]
+  Rendered clientes/_form.html.erb (419.4ms)
+  Rendered clientes/edit.html.erb within layouts/application (424.6ms)
+  Rendered layouts/_navigation_links.html.erb (0.9ms)
+  Rendered layouts/_navigation.html.erb (3.7ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 1916ms (Views: 1912.1ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/clientes/61" for 127.0.0.1 at 2015-06-11 22:11:28 -0500
+Processing by ClientesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7c4B5NzICH1YrP18VIpY2MutRMA0gbIRACXe22FfRMvYFe4p3PTfrsVyQm8WFY0y/k5QheN+GLVGvjjsqiJ0Lw==", "cliente"=>{"nombre"=>"home start", "telefono"=>"home start", "celular"=>"home", "barrio"=>"home", "direccion"=>"home", "referenciadir"=>"home", "hora"=>"home", "fecha"=>"home", "ocacion"=>"home", "valor"=>"1"}, "commit"=>"GUARDAR", "id"=>"61"}
+  [1m[36mCliente Load (0.4ms)[0m  [1mSELECT  "clientes".* FROM "clientes" WHERE "clientes"."id" = ? LIMIT 1[0m  [["id", 61]]
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mUPDATE "clientes" SET "telefono" = ?, "updated_at" = ? WHERE "clientes"."id" = ?[0m  [["telefono", "home start"], ["updated_at", "2015-06-12 03:11:28.295104"], ["id", 61]]
+  [1m[35m (258.9ms)[0m  commit transaction
+Redirected to http://localhost:3000/clientes/61
+Completed 302 Found in 281ms (ActiveRecord: 260.3ms)
+
+
+Started GET "/clientes/61" for 127.0.0.1 at 2015-06-11 22:11:28 -0500
+Processing by ClientesController#show as HTML
+  Parameters: {"id"=>"61"}
+  [1m[36mCliente Load (0.4ms)[0m  [1mSELECT  "clientes".* FROM "clientes" WHERE "clientes"."id" = ? LIMIT 1[0m  [["id", 61]]
+  Rendered clientes/show.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_navigation_links.html.erb (0.9ms)
+  Rendered layouts/_navigation.html.erb (3.4ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 1492ms (Views: 1488.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/clientes/61/edit" for 127.0.0.1 at 2015-06-11 22:11:51 -0500
+Processing by ClientesController#edit as HTML
+  Parameters: {"id"=>"61"}
+  [1m[35mCliente Load (0.4ms)[0m  SELECT  "clientes".* FROM "clientes" WHERE "clientes"."id" = ? LIMIT 1  [["id", 61]]
+  Rendered clientes/_form.html.erb (406.6ms)
+  Rendered clientes/edit.html.erb within layouts/application (410.0ms)
+  Rendered layouts/_navigation_links.html.erb (0.9ms)
+  Rendered layouts/_navigation.html.erb (3.7ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 1878ms (Views: 1873.8ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/clientes/61" for 127.0.0.1 at 2015-06-11 22:12:03 -0500
+Processing by ClientesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"h8fKcXpHt7Yi4V7O2EywohfEuNdt3DiaY8gM8aM6oy6yHCW8entgZb8/4d2a02VIIieskrojkj4lU+rGaEeTyg==", "cliente"=>{"nombre"=>"home start", "telefono"=>"home start", "celular"=>"home start", "barrio"=>"home", "direccion"=>"home", "referenciadir"=>"home", "hora"=>"home", "fecha"=>"home", "ocacion"=>"home", "valor"=>"1"}, "commit"=>"GUARDAR", "id"=>"61"}
+  [1m[36mCliente Load (0.6ms)[0m  [1mSELECT  "clientes".* FROM "clientes" WHERE "clientes"."id" = ? LIMIT 1[0m  [["id", 61]]
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mUPDATE "clientes" SET "celular" = ?, "updated_at" = ? WHERE "clientes"."id" = ?[0m  [["celular", "home start"], ["updated_at", "2015-06-12 03:12:03.531300"], ["id", 61]]
+  [1m[35m (160.2ms)[0m  commit transaction
+Redirected to http://localhost:3000/clientes/61
+Completed 302 Found in 180ms (ActiveRecord: 161.9ms)
+
+
+Started GET "/clientes/61" for 127.0.0.1 at 2015-06-11 22:12:03 -0500
+Processing by ClientesController#show as HTML
+  Parameters: {"id"=>"61"}
+  [1m[36mCliente Load (0.4ms)[0m  [1mSELECT  "clientes".* FROM "clientes" WHERE "clientes"."id" = ? LIMIT 1[0m  [["id", 61]]
+  Rendered clientes/show.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_navigation_links.html.erb (0.9ms)
+  Rendered layouts/_navigation.html.erb (3.5ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 1532ms (Views: 1527.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/clientes" for 127.0.0.1 at 2015-06-11 22:12:12 -0500
+Processing by ClientesController#index as HTML
+  [1m[35mCliente Load (2.2ms)[0m  SELECT  "clientes".* FROM "clientes" WHERE (upper(fecha) like'%%')  ORDER BY fecha LIMIT 6 OFFSET 0
+  [1m[36m (0.8ms)[0m  [1mSELECT COUNT(*) FROM "clientes" WHERE (upper(fecha) like'%%')[0m
+  [1m[35mCACHE (0.1ms)[0m  SELECT COUNT(*) FROM "clientes" WHERE (upper(fecha) like'%%')
+  Rendered clientes/index.html.erb within layouts/application (29.4ms)
+  Rendered layouts/_navigation_links.html.erb (0.9ms)
+  Rendered layouts/_navigation.html.erb (3.8ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 1555ms (Views: 1548.4ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/clientes?utf8=%E2%9C%93&search=home" for 127.0.0.1 at 2015-06-11 22:12:18 -0500
+Processing by ClientesController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"home"}
+  [1m[36mCliente Load (1.0ms)[0m  [1mSELECT  "clientes".* FROM "clientes" WHERE (upper(fecha) like'%HOME%')  ORDER BY fecha LIMIT 6 OFFSET 0[0m
+  [1m[35m (0.9ms)[0m  SELECT COUNT(*) FROM "clientes" WHERE (upper(fecha) like'%HOME%')
+  Rendered clientes/index.html.erb within layouts/application (18.3ms)
+  Rendered layouts/_navigation_links.html.erb (0.9ms)
+  Rendered layouts/_navigation.html.erb (3.5ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 1541ms (Views: 1535.8ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/clientes/61/edit" for 127.0.0.1 at 2015-06-11 22:12:50 -0500
+Processing by ClientesController#edit as HTML
+  Parameters: {"id"=>"61"}
+  [1m[36mCliente Load (0.4ms)[0m  [1mSELECT  "clientes".* FROM "clientes" WHERE "clientes"."id" = ? LIMIT 1[0m  [["id", 61]]
+  Rendered clientes/_form.html.erb (398.1ms)
+  Rendered clientes/edit.html.erb within layouts/application (401.6ms)
+  Rendered layouts/_navigation_links.html.erb (0.9ms)
+  Rendered layouts/_navigation.html.erb (3.7ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 1903ms (Views: 1898.5ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/clientes/61" for 127.0.0.1 at 2015-06-11 22:13:01 -0500
+Processing by ClientesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GgkGyO4t1UieagRd8oHaAONtnimQ7Y42UkyS8/b/Q0sv0ukF7hECmwO0u06wHg/q1o6KbEcSJJIU13TEPYJzrw==", "cliente"=>{"nombre"=>"home start", "telefono"=>"home start", "celular"=>"home start", "barrio"=>"home start", "direccion"=>"home", "referenciadir"=>"home", "hora"=>"home", "fecha"=>"home", "ocacion"=>"home", "valor"=>"1"}, "commit"=>"GUARDAR", "id"=>"61"}
+  [1m[35mCliente Load (0.4ms)[0m  SELECT  "clientes".* FROM "clientes" WHERE "clientes"."id" = ? LIMIT 1  [["id", 61]]
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.5ms)[0m  UPDATE "clientes" SET "barrio" = ?, "updated_at" = ? WHERE "clientes"."id" = ?  [["barrio", "home start"], ["updated_at", "2015-06-12 03:13:01.917534"], ["id", 61]]
+  [1m[36m (242.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/clientes/61
+Completed 302 Found in 267ms (ActiveRecord: 244.3ms)
+
+
+Started GET "/clientes/61" for 127.0.0.1 at 2015-06-11 22:13:02 -0500
+Processing by ClientesController#show as HTML
+  Parameters: {"id"=>"61"}
+  [1m[35mCliente Load (0.4ms)[0m  SELECT  "clientes".* FROM "clientes" WHERE "clientes"."id" = ? LIMIT 1  [["id", 61]]
+  Rendered clientes/show.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_navigation_links.html.erb (0.9ms)
+  Rendered layouts/_navigation.html.erb (3.7ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 1514ms (Views: 1510.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/clientes" for 127.0.0.1 at 2015-06-11 22:13:18 -0500
+Processing by ClientesController#index as HTML
+  [1m[36mCliente Load (2.1ms)[0m  [1mSELECT  "clientes".* FROM "clientes" WHERE (upper(fecha) like'%%')  ORDER BY fecha LIMIT 6 OFFSET 0[0m
+  [1m[35m (0.7ms)[0m  SELECT COUNT(*) FROM "clientes" WHERE (upper(fecha) like'%%')
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT COUNT(*) FROM "clientes" WHERE (upper(fecha) like'%%')[0m
+  Rendered clientes/index.html.erb within layouts/application (25.9ms)
+  Rendered layouts/_navigation_links.html.erb (0.9ms)
+  Rendered layouts/_navigation.html.erb (4.0ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 1534ms (Views: 1526.6ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/clientes/56" for 127.0.0.1 at 2015-06-11 22:15:00 -0500
+Processing by ClientesController#show as HTML
+  Parameters: {"id"=>"56"}
+  [1m[35mCliente Load (1.1ms)[0m  SELECT  "clientes".* FROM "clientes" WHERE "clientes"."id" = ? LIMIT 1  [["id", 56]]
+  Rendered clientes/show.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_navigation_links.html.erb (0.8ms)
+  Rendered layouts/_navigation.html.erb (3.7ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 1530ms (Views: 1522.0ms | ActiveRecord: 1.1ms)
